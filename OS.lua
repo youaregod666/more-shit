@@ -40,6 +40,10 @@ package = {
   loading = {}
 }
 
+if computer.getArchitecture and computer.getArchitecture() == "Lua 5.3" then
+computer.shutdown(true)
+end
+
 -- Checks existense of specified path. It will be overriden after filesystem library initialization
 local function requireExists(path)
   return bootFilesystemProxy.exists(path)
