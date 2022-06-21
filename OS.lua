@@ -103,7 +103,7 @@ local function UIRequire(module)
     return math.floor(screenWidth / 2 - width / 2)
   end
   
-  local title, width, total = "Starting IMineOS PC", 26, 14
+  local title, width, total = "Starting Hacked PC", 26, 14
   local x, y, part = centrize(width), math.floor(screenHeight / 2 - 1), math.ceil(width * UIRequireCounter / UIRequireTotal)
   UIRequireCounter = UIRequireCounter + 1
   
@@ -228,7 +228,7 @@ event.addHandler(
 
 -- Logging in
 system.authorize()
---computer.shutdown(true)
+computer.shutdown(true)
 
 
 -- Main loop with UI regeneration after errors 
