@@ -40,7 +40,7 @@ package = {
   loading = {}
 }
 
-if computer.getArchitecture and computer.getArchitecture() == "Lua 5.3" then
+if computer.getArchitecture and computer.getArchitecture() == "Lua 5.2" then
 computer.shutdown(true)
 end
 
